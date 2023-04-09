@@ -1,20 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
-:root
-{
-    --main-color:#0aad0a;
-    --light-color:#f0f3f2;
-    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
-    --font-family:'Encode Sans Expanded', sans-serif;
-    --rating-color:#ffc908;
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  --font-family: "Encode Sans Expanded", sans-serif;
+  --rating-color: #ffc908;
 }
 
-body{
+body {
   font-family: var(--font-family) !important;
 }
-
-.text-mainColor{
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.text-mainColor {
   color: var(--main-color);
 }
-.bg-main{
-	background-color:var(--main-color);
+.bg-main {
+  background-color: var(--main-color);
+}
+.border-main {
+  border: 1px solid var(--main-color);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* featured products */
+.product-home-button {
+  transition: all 1s;
+  transform: translateY(50%);
+  opacity: 0;
+}
+.home-product {
+  transition: all 0.5s;
+}
+.home-product:hover .product-home-button {
+  transform: translateY(0%);
+  opacity: 1;
+}
+.home-product:hover {
+  border: 2px solid #bbb;
 }
